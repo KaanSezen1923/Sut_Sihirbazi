@@ -48,6 +48,7 @@ Sut_Sihirbazi/
 │   └── package.json        # JS bağımlılıkları
 │
 └── README.md               # Proje dökümantasyonu
+````
 
 ⚙️ Kurulum ve Çalıştırma
 Projeyi yerel makinenizde ve fiziksel Android cihazınızda çalıştırmak için aşağıdaki adımları takip edin.
