@@ -1,3 +1,6 @@
+
+
+```markdown
 # 🥛 Süt Sihirbazı (Milk Wizard)
 
 **Süt Sihirbazı**, süt ve süt ürünleri üretimi, yönetimi ve süreçleri hakkında kullanıcılarına yapay zeka destekli rehberlik sağlayan kapsamlı bir mobil uygulama projesidir. Bu proje, üniversite bitirme tezi kapsamında geliştirilmiştir.
@@ -48,21 +51,28 @@ Sut_Sihirbazi/
 │   └── package.json        # JS bağımlılıkları
 │
 └── README.md               # Proje dökümantasyonu
-````
 
-⚙️ Kurulum ve Çalıştırma
+```
+
+---
+
+## ⚙️ Kurulum ve Çalıştırma
+
 Projeyi yerel makinenizde ve fiziksel Android cihazınızda çalıştırmak için aşağıdaki adımları takip edin.
 
-1. Projeyi Klonlayın
-Bash
+### 1. Projeyi Klonlayın
 
+```bash
 git clone [https://github.com/KaanSezen1923/Sut_Sihirbazi.git](https://github.com/KaanSezen1923/Sut_Sihirbazi.git)
 cd Sut_Sihirbazi
-2. Backend Kurulumu
+
+```
+
+### 2. Backend Kurulumu
+
 Backend klasörüne gidin ve sanal ortam oluşturup bağımlılıkları yükleyin:
 
-Bash
-
+```bash
 cd Backend
 
 # Sanal ortam oluşturma (Windows)
@@ -74,26 +84,28 @@ pip install -r requirements.txt
 
 # Sunucuyu başlatma
 uvicorn main:app --reload
-Backend http://127.0.0.1:8000 adresinde çalışmaya başlayacaktır.
 
-3. Mobil Uygulama ve Cihaz Bağlantısı (USB & ADB Reverse)
+```
+
+*Backend `http://127.0.0.1:8000` adresinde çalışmaya başlayacaktır.*
+
+### 3. Mobil Uygulama ve Cihaz Bağlantısı (USB & ADB Reverse)
+
 Bu proje fiziksel Android cihaz üzerinde USB bağlantısı ile test edilmek üzere yapılandırılmıştır.
 
-Geliştirici Seçeneklerini Açın: Android telefonunuzda "Geliştirici Seçenekleri"ni ve "USB Hata Ayıklama"yı (USB Debugging) aktif hale getirin.
-
-Cihazı Bağlayın: Telefonunuzu USB kablosu ile bilgisayara bağlayın.
-
-Port Yönlendirme (Önemli): Bilgisayarınızdaki yerel sunucuyu (localhost) telefonunuza yönlendirmek için terminalde şu komutu çalıştırın:
-
-Bash
-
+1. **Geliştirici Seçeneklerini Açın:** Android telefonunuzda "Geliştirici Seçenekleri"ni ve "USB Hata Ayıklama"yı (USB Debugging) aktif hale getirin.
+2. **Cihazı Bağlayın:** Telefonunuzu USB kablosu ile bilgisayara bağlayın.
+3. **Port Yönlendirme (Önemli):** Bilgisayarınızdaki yerel sunucuyu (localhost) telefonunuza yönlendirmek için terminalde şu komutu çalıştırın:
+```bash
 adb reverse tcp:8000 tcp:8000
-Bu komut sayesinde, telefonunuzdaki uygulama http://localhost:8000 veya http://127.0.0.1:8000 adresine istek attığında doğrudan bilgisayarınızdaki FastAPI sunucusuna erişebilir.
 
-Uygulamayı Başlatın: Yeni bir terminal açın ve mobileapp klasörüne gidin:
+```
 
-Bash
 
+*Bu komut sayesinde, telefonunuzdaki uygulama `http://localhost:8000` veya `http://127.0.0.1:8000` adresine istek attığında doğrudan bilgisayarınızdaki FastAPI sunucusuna erişebilir.*
+4. **Uygulamayı Başlatın:**
+Yeni bir terminal açın ve `mobileapp` klasörüne gidin:
+```bash
 cd mobileapp
 
 # Bağımlılıkları yükleme
@@ -101,16 +113,28 @@ npm install
 
 # Uygulamayı başlatma
 npx expo start
-Terminalde çıkan seçeneklerden "a" tuşuna basarak (Run on Android) uygulamayı bağlı olan telefonunuza yükleyip başlatabilirsiniz.
 
-📝 Notlar
-API URL: adb reverse kullanıldığı için kod içerisindeki (örneğin Chat.tsx) API isteklerinde IP adresi değiştirmeye gerek yoktur; http://127.0.0.1:8000 veya http://localhost:8000 olarak kalabilir.
+```
 
-API anahtarları (OpenAI API Key vb.) için .env dosyası oluşturmayı unutmayın.
 
-👤 İletişim & Geliştirici
-Geliştirici: Kaan Sezen
+*Terminalde çıkan seçeneklerden **"a"** tuşuna basarak (Run on Android) uygulamayı bağlı olan telefonunuza yükleyip başlatabilirsiniz.*
 
-GitHub: KaanSezen1923
+---
 
-Bu proje Kaan Sezen tarafından Bitirme Tezi kapsamında geliştirilmiştir.
+## 📝 Notlar
+
+* **API URL:** `adb reverse` kullanıldığı için kod içerisindeki (örneğin `Chat.tsx`) API isteklerinde IP adresi değiştirmeye gerek yoktur; `http://127.0.0.1:8000` veya `http://localhost:8000` olarak kalabilir.
+* API anahtarları (OpenAI API Key vb.) için `.env` dosyası oluşturmayı unutmayın.
+
+## 👤 İletişim & Geliştirici
+
+* **Geliştirici:** Kaan Sezen
+* **GitHub:** [KaanSezen1923](https://www.google.com/search?q=https://github.com/KaanSezen1923)
+
+---
+
+*Bu proje Kaan Sezen tarafından Bitirme Tezi kapsamında geliştirilmiştir.*
+
+```
+
+```
