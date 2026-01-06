@@ -1,24 +1,24 @@
 ```markdown
-# 🥛 Süt Sihirbazı (Milk Wizard)
+🥛 Süt Sihirbazı (Milk Wizard)
 
-**Süt Sihirbazı**, süt ve süt ürünleri üretimi, yönetimi ve süreçleri hakkında kullanıcılarına yapay zeka destekli rehberlik sağlayan kapsamlı bir mobil uygulama projesidir. Bu proje, üniversite bitirme tezi kapsamında geliştirilmiştir.
+Süt Sihirbazı, süt ve süt ürünleri üretimi, yönetimi ve süreçleri hakkında kullanıcılarına yapay zeka destekli rehberlik sağlayan kapsamlı bir mobil uygulama projesidir. Bu proje, üniversite bitirme tezi kapsamında geliştirilmiştir.
 
-## 🚀 Proje Hakkında
+🚀 Proje Hakkında
 
 Bu proje, kullanıcıların süt endüstrisi ile ilgili sorularını doğal dil işleme (NLP) teknolojileri kullanarak yanıtlayan ve RAG (Retrieval-Augmented Generation) mimarisi ile güçlendirilmiş bir yapay zeka asistanı içerir. Kullanıcılar mobil uygulama üzerinden sorularını sorabilir ve anlık, doğru bilgiler alabilirler.
 
-### Öne Çıkan Özellikler
-* **Yapay Zeka Destekli Sohbet:** Kullanıcı sorularını anlayan ve bağlamsal cevaplar veren akıllı asistan.
-* **RAG Mimarisi:** Doğruluk payı yüksek, özel veri setleriyle eğitilmiş bilgi geri getirme sistemi.
-* **Sesli Asistan:** Whisper modeli entegrasyonu ile sesli soru sorma özelliği.
-* **Modern Mobil Arayüz:** Kullanıcı dostu ve hızlı React Native arayüzü.
-* **Hızlı Backend:** Python ve FastAPI ile geliştirilmiş yüksek performanslı sunucu yapısı.
+Öne Çıkan Özellikler
+Yapay Zeka Destekli Sohbet: Kullanıcı sorularını anlayan ve bağlamsal cevaplar veren akıllı asistan.
+RAG Mimarisi: Doğruluk payı yüksek, özel veri setleriyle eğitilmiş bilgi geri getirme sistemi.
+Sesli Asistan: Whisper modeli entegrasyonu ile sesli soru sorma özelliği.
+Modern Mobil Arayüz: Kullanıcı dostu ve hızlı React Native arayüzü.
+Hızlı Backend:Python ve FastAPI ile geliştirilmiş yüksek performanslı sunucu yapısı.
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+ 🛠️ Kullanılan Teknolojiler
 
-### Backend (Sunucu Tarafı)
+ Backend (Sunucu Tarafı)
 * **Dil:** Python 3.x
 * **Framework:** FastAPI
 * **AI & RAG:** LangChain, OpenAI (veya kullanılan diğer LLM), Vektör Veritabanı
@@ -82,7 +82,7 @@ python -m venv venv
 # Bağımlılıkları yükleme
 pip install -r requirements.txt
 
-# Sunucuyu başlatma (DÜZELTİLDİ: api.py başlatılmalı)
+# Sunucuyu başlatma 
 uvicorn api:app --reload
 
 ```
